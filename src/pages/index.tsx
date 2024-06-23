@@ -34,37 +34,48 @@ const GeistReg = localFont({
 
 export default function Home() {
   return (
-    <main className=" flex min-h-screen flex-col items-center justify-center p-24 bg-black">
+    <main
+      className={`${GeistBold.className} flex min-h-screen flex-col items-center justify-center p-24 bg-black`}
+    >
       <BackgroundBeams className="   " />
-      <div className="flex min-h-screen w-full justify-center p-2 items-center">
+      {/* <div className="flex min-h-screen justify-center p-2 items-center min-w-11">
         <div className="h-[40rem] flex justify-center items-center px-4">
-          <div className="text-4xl  font-normal w-[39rem] ">
-            Your catalog of the best
-            <FlipWords
-              words={["strategies", "principles", "fundamentals"]}
-              className=" text-white relative text-left ml-3"
-            />
+          <div className="flex text-4xl  w-[55rem] items-center justify-center mx-auto ">
+            Your catalog of the{" "}
+            <span className="ml-2 text-transparent bg-clip-text bg-gradient-to-r from-slate-200 to-[#7172B1]">
+              best
+            </span>
+            <div>
+              <FlipWords
+                words={["strategies", "principles", "fundamentals"]}
+                className={` text-white relative text-left ml-3 `}
+              />
+            </div>
           </div>
         </div>
-      </div>
+      </div> */}
 
-      {/* <div
-        className={`  relative flex flex-col items-center justify-center md:text-5xl text-3xl ${GeistBold.className}  `}
+      <div
+        className={`relative flex flex-col  justify-center md:text-5xl text-3xl ${GeistBold.className} `}
       >
-        <div className="flex left-0 relative justify-center mx-auto">
-          <h1 className=" flex text-white  mr-3 items-center">
-            Your catalog of the
-            <span className="flex items-center ml-3 text-transparent bg-clip-text bg-gradient-to-r from-slate-200 to-[#7172B1]">
+        <div className="flex w-full relative justify-center ">
+          <div className=" flex text-white  items-center w-[60rem]">
+            <div className="">Your catalog of the</div>
+            <span className="ml-2 text-transparent bg-clip-text bg-gradient-to-r from-slate-200 to-[#7172B1]">
               best
-            </span>{" "}
-            <FlipWords
-              words={["strategies", "principles", "fundamentals"]}
-              className=" text-white fixed ml-[37rem]"
-            />
-          </h1>
+            </span>
+            <div>
+              <FlipWords
+                words={["strategies", "principles", "fundamentals"]}
+                className=" text-white ml-3 "
+              />
+            </div>
+          </div>
         </div>
-        <div className="min-w-screen flex text-center ">
-          <h3 className={`text-[#D7D7D7] mt-5 ${GeistReg.className} text-2xl `}>
+        <div className="">
+          <h3
+            className={`text-[#D7D7D7] mt-5 ${GeistReg.className} text-2xl  `}
+          >
             Strategies used by Professional VCT Teams, Pro Players, <br></br>and
             more—all in one place.
           </h3>
@@ -72,14 +83,14 @@ export default function Home() {
 
         <Link
           href="/main"
-          className="relative mt-4 inline-flex h-12 overflow-hidden rounded-full p-[1px] focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50"
+          className=" w-60 relative mt-5 inline-flex h-12 overflow-hidden rounded-full p-[1px] focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50"
         >
           <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#E2CBFF_0%,#393BB2_50%,#E2CBFF_100%)]" />
           <span className="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-full bg-slate-950 px-6 py-2 text-lg font-medium text-white backdrop-blur-3xl">
             View Strategies <span className="ml-4">&rarr;</span>
           </span>
         </Link>
-      </div> */}
+      </div>
     </main>
   );
 }
