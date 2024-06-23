@@ -1,5 +1,5 @@
 import localFont from "@next/font/local";
-
+import maps from "./maps.json";
 const GeistBold = localFont({
   src: [
     {
@@ -16,23 +16,19 @@ const GeistReg = localFont({
     },
   ],
 });
-//  {
-//       path: "../../public/fonts/Geist-Regular.otf",
-//       weight: "400",
-//     },
-//     {
-//       path: "../../public/fonts/Geist-SemiBold.otf",
-//       weight: "500",
-//     },
-// {
-//       path: "../../public/fonts/Geist-Black.otf",
-//       weight: "700",
-//     },
 
 export default function Home() {
   return (
-    <main className=" flex min-h-screen flex-col items-center justify-center p-24 bg-black">
-      <h1 className="text-white">hello</h1>
+    <main className=" flex min-h-screen  items-center justify-center  bg-black">
+      <div className="flex h-screen w-full">
+        <div className="flex-none w-1/4 overflow-hidden bg-gray-100 border-r border-gray-300 p-5">
+          Panel 1 Content
+        </div>
+        <div className="flex-1 overflow-hidden bg-gray-100 border-r border-gray-300 p-5">
+          Panel 2 Content
+        </div>
+        <div className="flex-1 overflow-auto bg-gray-100 p-5 no-scrollbar"></div>
+      </div>
     </main>
   );
 }

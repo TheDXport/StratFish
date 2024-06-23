@@ -35,26 +35,38 @@ const GeistReg = localFont({
 export default function Home() {
   return (
     <main className=" flex min-h-screen flex-col items-center justify-center p-24 bg-black">
-      <BackgroundBeams className=" absolute  " />
-
-      <div
-        className={`w-full h-full relative flex flex-col items-center justify-center text-5xl ${GeistBold.className}  `}
-      >
-        <h1 className=" text-white mr-[19rem] ">
-          {" "}
-          Your catalog of the{" "}
-          <span className="text-transparent bg-clip-text bg-gradient-to-r from-slate-200 to-[#7172B1]">
-            best
+      <BackgroundBeams className="   " />
+      <div className="flex min-h-screen w-full justify-center p-2 items-center">
+        <div className="h-[40rem] flex justify-center items-center px-4">
+          <div className="text-4xl  font-normal w-[39rem] ">
+            Your catalog of the best
             <FlipWords
               words={["strategies", "principles", "fundamentals"]}
-              className=" text-white absolute ml-3 mt-[-8px] "
+              className=" text-white relative text-left ml-3"
             />
-          </span>{" "}
-        </h1>
-        <div className="w-[40rem] flex text-center ">
+          </div>
+        </div>
+      </div>
+
+      {/* <div
+        className={`  relative flex flex-col items-center justify-center md:text-5xl text-3xl ${GeistBold.className}  `}
+      >
+        <div className="flex left-0 relative justify-center mx-auto">
+          <h1 className=" flex text-white  mr-3 items-center">
+            Your catalog of the
+            <span className="flex items-center ml-3 text-transparent bg-clip-text bg-gradient-to-r from-slate-200 to-[#7172B1]">
+              best
+            </span>{" "}
+            <FlipWords
+              words={["strategies", "principles", "fundamentals"]}
+              className=" text-white fixed ml-[37rem]"
+            />
+          </h1>
+        </div>
+        <div className="min-w-screen flex text-center ">
           <h3 className={`text-[#D7D7D7] mt-5 ${GeistReg.className} text-2xl `}>
-            Strategies used by Professional VCT Teams, Pro Players, and more—all
-            in one place.
+            Strategies used by Professional VCT Teams, Pro Players, <br></br>and
+            more—all in one place.
           </h3>
         </div>
 
@@ -67,7 +79,7 @@ export default function Home() {
             View Strategies <span className="ml-4">&rarr;</span>
           </span>
         </Link>
-      </div>
+      </div> */}
     </main>
   );
 }

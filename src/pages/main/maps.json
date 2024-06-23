@@ -1,0 +1,38 @@
+[
+  {
+    "name": "Ascent",
+    "img": "../../../public/maps/Ascent"
+  },
+  {
+    "name": "Bind",
+    "img": "../../../public/maps/Bind"
+  },
+  {
+    "name": "Breeze",
+    "img": "../../../public/maps/Breeze"
+  },
+  {
+    "name": "Fracture",
+    "img": "../../../public/maps/Fracture"
+  },
+  {
+    "name": "Haven",
+    "img": "../../../public/maps/Haven"
+  },
+  {
+    "name": "Icebox",
+    "img": "../../../public/maps/Icebox"
+  },
+  {
+    "name": "Pearl",
+    "img": "../../../public/maps/Pearl"
+  },
+  {
+    "name": "Split",
+    "img": "../../../public/maps/Split"
+  },
+  {
+    "name": "Sunset",
+    "img": "../../../public/maps/Sunset"
+  }
+]
