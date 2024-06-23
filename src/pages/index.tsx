@@ -59,15 +59,15 @@ export default function Home() {
         className={`relative flex flex-col  justify-center md:text-5xl text-3xl ${GeistBold.className} `}
       >
         <div className="flex w-full relative justify-center ">
-          <div className=" flex text-white  items-center w-[60rem]">
+          <div className=" flex text-white  items-center w-[80rem] text-6xl">
             <div className="">Your catalog of the</div>
-            <span className="ml-2 text-transparent bg-clip-text bg-gradient-to-r from-slate-200 to-[#7172B1]">
+            <span className="ml-3 text-transparent bg-clip-text bg-gradient-to-r from-slate-200 to-[#7172B1]">
               best
             </span>
             <div>
               <FlipWords
-                words={["strategies", "principles", "fundamentals"]}
-                className=" text-white ml-3 "
+                words={["strategies.", "principles.", "fundamentals."]}
+                className=" text-white ml-4 "
               />
             </div>
           </div>
